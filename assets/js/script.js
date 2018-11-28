@@ -1,6 +1,5 @@
 function reuseAdd(add){
 
-
 	document.getElementById('col-1').classList.add("col-lg-" + add);
 	document.getElementById('col-2').classList.add("col-lg-" + add);
 	document.getElementById('col-3').classList.add("col-lg-" + add);
@@ -33,72 +32,54 @@ function remove(add){
 
 }
 
-document.getElementById('1').onclick = () => {
-
-	reuseAdd(12);
+function rem(){
+	remove(12);
 	remove(6);
 	remove(4);
 	remove(3);
 	remove(2);
 	remove(1);
+
+}
+
+document.getElementById('1').onclick = () => {
+
+	rem();
+	reuseAdd(12);
 
 }
 
 document.getElementById('2').onclick = () => {
 
-	remove(12);
+	rem();
 	reuseAdd(6);
-	remove(4);
-	remove(3);
-	remove(2);
-	remove(1);
-
 
 }
 
 document.getElementById('3').onclick = () => {
 
-	remove(12);
-	remove(6);
+	rem();
 	reuseAdd(4);
-	remove(3);
-	remove(2);
-	remove(1);
 
 }
 
 document.getElementById('4').onclick = () => {
 
-	remove(12);
-	remove(6);
-	remove(4);
+	rem();
 	reuseAdd(3);
-	remove(4);
-	remove(2);
-	remove(1);
 
 }
 
 document.getElementById('6').onclick = () => {
 
-	remove(12);
-	remove(6);
-	remove(4);
-	remove(3);
-	remove(4);
+	rem();
 	reuseAdd(2);
-	remove(1);
 
 }
 
 document.getElementById('12').onclick = () => {
 
-	remove(12);
-	remove(6);
-	remove(4);
-	remove(3);
-	remove(4);
-	remove(2);
+	rem();
 	reuseAdd(1);
 
 }
