@@ -1,0 +1,22 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: lightblue;
+}
+
+button{
+	padding: 50px;
+	width: 100%;
+	background-color: lightgreen;
+}
+
+div[class*=col-lg-]{
+
+	border: 2px solid black;
+	background-color: indianred;
+
+}
